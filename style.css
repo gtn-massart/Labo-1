@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+/* RESET CSS */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  --blue: rgb(58,117,176);
+  --blue-link: rgb(0,107,143);
+  --green: rgb(25,135,84);
+  --light-blue: rgb(217,229,234);
+  --light-grey: rgb(238,238,238);
+  --light-yellow: rgb(255,255,206);
+  --orange: rgb(240,192,0);
+  --white: rgb(255,255,255);
+}
+body{
+  min-width: 430px;
+  min-height: 100vh;
+  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: var(--blue-link);
+}
+
+
+
+/* ***** HEADER ***** */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--blue);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Burger Menu */
+.burger-menu {
+  position: absolute;
+  right: 25px;
+  top: 40px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+.container-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+}
+.line {
+  position: absolute;
+  border-radius: 10px;
+  width: 30px;
+  height: 2px;
+  background: black;
+}
+.burger-menu .line:nth-child(1) {
+  top: 4px;
+}
+.burger-menu .line:nth-child(2) {
+  top: 14px;
+}
+.burger-menu .line:nth-child(3) {
+  top:24px;
+}
+/* end Burger Menu */
+
+.brand-container {
+  width: 125px;
+  display: inline-block;
+}
+.brand {
+  width: 125px;
+}
+.nav-link-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /* display: none; */
+}
+.nav-link-item {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.nav-link-item a {
+  text-decoration: none;  
+  color: var(--white);
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+}
+.nav-input {
+  width: 150px;
+  line-height: 1.5rem;
+  align-self: end;
+  /* display: none; */
+}
+
+/* ***** MAIN ***** */
+.main-container {
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Aside */
+.aside-container {
+  padding: 1rem;
+}
+.aside-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.aside-link-list {
+  list-style-type: none;
+}
+.aside-list-item {
+  margin-bottom: 0.5rem;
+}
+.aside-list-item a {
+  color: var(--blue-link);
+}
+/* End Aside */
+
+/* Section content */
+.main-title-container {
+  padding-bottom: 1.5rem;
+}
+.main-title-container .main-title {
+  font-family: "Roboto-Bold";
+  margin-bottom: 0.5rem;
+}
+.main-title-container .version {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.licence-infos-container{
+  background-color: var(--light-yellow);
+  border: 1px solid var(--orange);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.licence-info-subtitle {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.licence-info-txt{
+  margin-bottom: 1.5rem;
+}
+
+.download-container {
+  background-color: var(--light-blue);
+  padding: 2rem 3.5rem 3.5rem 3.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.download-container input {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--green);
+  height: 2.3rem;
+  border: none;
+  border-radius: 5px;
+  color: var(--light-blue);
+  margin: 0 0.5rem;
+}
+.download-txt {
+  margin-top: 1.5rem;
+}
+
+.reboot-message {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.reboot-message img {
+  height: 24px;
+  float: left;
+  margin: 0 1.2rem 1.2rem 0
+}
+
+.faq-config {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+/* ***** FOOTER ***** */
+.footer-container {
+  background-color: var(--light-grey);
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.copyright {
+  margin-bottom: 0.8rem;
+}
+.footer-container span {
+  margin-right: 0.8rem;
+  text-wrap: nowrap;
+}
+
