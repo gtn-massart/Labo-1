@@ -23,6 +23,7 @@
 html{
   --blue: rgb(58,117,176);
   --blue-link: rgb(0,107,143);
+  --dark-orange: rgb(231,130,0);
   --green: rgb(25,135,84);
   --light-blue: rgb(217,229,234);
   --light-grey: rgb(238,238,238);
@@ -111,6 +112,11 @@ header {
   text-decoration: none;  
   color: var(--white);
   font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.nav-link-item a:hover {
+  color: var(--dark-orange);
 }
 .nav-input {
   width: 150px;
