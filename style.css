@@ -127,7 +127,7 @@ header {
 
 /* ***** MAIN ***** */
 .main-container {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -183,14 +183,15 @@ header {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 .download-container input {
   font-size: 1rem;
   font-weight: bold;
   background-color: var(--green);
-  height: 2.3rem;
+  height: 2.5rem;
+  width: 250px;
   border: none;
   border-radius: 5px;
   color: var(--light-blue);
