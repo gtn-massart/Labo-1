@@ -319,8 +319,6 @@ header {
   padding: 1.5rem 2rem 2rem 2rem;
   text-align: center;
   font-size: 0.8rem;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 @media screen and (min-width: 1024px){
@@ -328,6 +326,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 3rem;
+    margin-top: 3rem;
   }  
 }
 .copyright {
