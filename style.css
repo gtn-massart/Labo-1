@@ -35,8 +35,6 @@ body{
   min-width: 430px;
   height: 100vh;
   font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
-  /* display: flex;
-  flex-direction: column; */
 }
 body a {
   text-decoration: none;
