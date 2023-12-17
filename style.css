@@ -33,8 +33,10 @@ html{
 }
 body{
   min-width: 430px;
-  min-height: 100vh;
+  height: 100vh;
   font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+  /* display: flex;
+  flex-direction: column; */
 }
 body a {
   text-decoration: none;
@@ -314,27 +316,32 @@ header {
 /* ***** FOOTER ***** */
 .footer-container {
   background-color: var(--light-grey);
-  margin-top: 2.5rem;
   padding: 1.5rem 2rem 2rem 2rem;
   text-align: center;
   font-size: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 @media screen and (min-width: 1024px){
   .footer-container {
     display: flex;
     justify-content: center;
+    padding: 3rem;
   }  
 }
 .copyright {
+  display: block;
   margin-bottom: 0.8rem;
 }
 @media screen and (min-width: 1024px){
   .copyright {
     margin-right: 0.8rem;
+    margin-bottom: 0;
   }  
 }
+
 .footer-container span {
   margin-right: 0.8rem;
   text-wrap: nowrap;
 }
-
