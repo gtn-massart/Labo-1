@@ -291,6 +291,7 @@ header {
   border-radius: 5px;
   color: var(--light-blue);
   margin: 0 0.5rem;
+  cursor: pointer;
 }
 .download-txt {
   margin-top: 1.5rem;
