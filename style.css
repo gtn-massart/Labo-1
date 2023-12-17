@@ -69,7 +69,7 @@ header {
 .burger-menu {
   position: absolute;
   right: 25px;
-  top: 40px;
+  top: 30px;
   width: 30px;
   height: 30px;
   border: none;
@@ -125,23 +125,26 @@ header {
 .nav-link-list {
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 @media screen and (min-width: 770px) {
   .nav-link-list {
     flex-direction: row;
     align-items: center;
     width: 60%;
+    margin: 0;
   }
 }
 .nav-link-item {
   list-style-type: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   font-size: 1.3rem;
-  margin-right: 2rem;
 }
 @media screen and (min-width: 770px) {
   .nav-link-item {
     margin-bottom: 0;
+    margin-right: 2rem;
   }
 }
 .nav-link-item a {
@@ -158,19 +161,32 @@ header {
   flex-grow: 3;
   display: flex;
   justify-content: flex-end;
-
 }
 .nav-input {
+  display: block;
   width: 150px;
-  line-height: 1.5rem;
+  height: 28px;
   align-self: end;
-  /* display: none; */
+  margin-right: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0 3px 3px 0;
 }
 @media screen and (min-width: 770px) {
   .nav-input {
     align-self: center;
   }
 }
+.input-container::before {
+  display: flex;
+  width: 2rem;
+  content: url("./images/loupe.png");
+  background-color: var(--white);
+  padding: 0 .03rem;
+  justify-content: center; 
+  border-radius: 3px 0 0 3px ;
+}
+
 
 /* ***** MAIN ***** */
 .main-container {
@@ -180,6 +196,12 @@ header {
 @media screen and (min-width: 770px) {
   .main-container {
     display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-container {
+    display: flex;
+    max-width: 65%;
   }
 }
 
@@ -246,7 +268,7 @@ header {
 
 .download-container {
   background-color: var(--light-blue);
-  padding: 2rem 3.5rem 3.5rem 3.5rem;
+  padding: 2rem 4rem 3.5rem 4rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -272,6 +294,7 @@ header {
 }
 .download-txt {
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .reboot-message {
@@ -298,8 +321,19 @@ header {
   text-align: center;
   font-size: 0.8rem;
 }
+@media screen and (min-width: 1024px){
+  .footer-container {
+    display: flex;
+    justify-content: center;
+  }  
+}
 .copyright {
   margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 1024px){
+  .copyright {
+    margin-right: 0.8rem;
+  }  
 }
 .footer-container span {
   margin-right: 0.8rem;
